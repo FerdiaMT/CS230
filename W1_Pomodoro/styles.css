@@ -1,0 +1,68 @@
+@font-face {
+    font-family: roboto-downloaded; /*roboto seems to not load on my laptop, so im going to use font face to import it in*/
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: orbitron-downloaded; /*same case here*/
+    src: url(Orbitron-Regular.ttf);
+}
+
+.buttonContainer{
+    
+}
+
+.appleContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.stButton{
+   /* background-color: #ff2592; */
+    border: 5px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color:#fcfafb;
+    cursor: pointer;
+    display: inline-block;
+    font-family: roboto,roboto-downloaded, sans-serif ; /*tries to load roboto first if available, then tries the dowloaded roboto (my laptop uses this one), then sans-serif if both dont work*/
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    transition:background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+}
+
+#timer{
+    font-family: Orbitron,orbitron-downloaded,sans-serif;
+    color:#fcfafb;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+#timer:hover{
+    color: yellow;
+}
+
+.stButton:hover{
+    border-color: black;
+}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
