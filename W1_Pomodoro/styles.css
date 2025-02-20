@@ -14,7 +14,8 @@
 
 .appleContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    transform: translateY(5vw);
 }
 
 body{
@@ -23,37 +24,51 @@ body{
 
 .stButton{
    /* background-color: #ff2592; */
-    border: 5px solid rgba(27, 31, 35, 0.15);
-    border-radius: 6px;
+    border: 10px solid rgba(27, 31, 35, 0.167);
+    border-radius: 10px;
     box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
     box-sizing: border-box;
     color:#fcfafb;
     cursor: pointer;
     display: inline-block;
     font-family: roboto,roboto-downloaded, sans-serif ; /*tries to load roboto first if available, then tries the dowloaded roboto (my laptop uses this one), then sans-serif if both dont work*/
-    font-size: 14px;
+    font-size: 50px;
     font-weight: 500;
     line-height: 20px;
-    padding: 6px 16px;
-    position: relative;
+    padding: 20px 56px;
+    position: relative ;
     transition:background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
 }
 
-#timer{
-    font-family: Orbitron,orbitron-downloaded,sans-serif;
-    color:#fcfafb;
-    font-size: 40px;
+.buttonContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    transform: translateY(5vw);
 }
 
+.timerBox{
+    display: flex; 
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+}
+#timer{
 
 
 
+    font-family: Orbitron,orbitron-downloaded,sans-serif;
+    color:#fcfafb;
+    font-size: 60px;
 
+    transform: translateY(-22.5vw);
+    z-index: 1000;
+    padding : 10px;
+    border-radius : 100px;
+}
 
 #timer:hover{
-    color: yellow;
+    color: "yellow";
 }
 
 .stButton:hover{
@@ -63,6 +78,5 @@ body{
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
 

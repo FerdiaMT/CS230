@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pomodoro Timer</title>
     <link rel = "stylesheet" href="styles.css"/>
+    
 </head>
 <body>
 
     <div class = "appleContainer">
-        <p id="timer">0</p>
-
         <svg viewBox = "0 0 100 36" xmlns="http://www.w3.org/2000/svg">
             <circle cx = "50" cy = "20" r = "12"  style="fill:#d52929;stroke:#9c0e0e;stroke-width:0.5"/>
             <ellipse rx="8" ry="3" cx="58" cy="5"style="fill:#00c21d;stroke:#006e10;stroke-width:0.5" />
@@ -20,10 +19,16 @@
     </div>
 
     <div class = "buttonContainer">
-        <button type = "button" class = "stButton" style=background-color:green>Start</button>
-        <button type = "button" class = "stButton" style=background-color:yellow>Pause</button>
-        <button type = "button" class = "stButton" style=background-color:red>Stop</button>
+        <button type = "button" onclick = "start()" class = "stButton" style=background-color:green>Start</button>
+        <button type = "button" onclick = "pause()" class = "stButton" style=background-color:yellow id = "pause">Pause</button>
+        <button type = "button" onclick = "stop()"  class = "stButton" style=background-color:red>Stop</button>
     </div>
     
+    <div class  = "timerBox">
+        <p id="timer">25:00</p>
+
+    </div>
+
+    <script src = "script.js"></script>
 </body>
 </html>
